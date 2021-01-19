@@ -32,13 +32,15 @@ class signIn: UIViewController {
         self.lblLine.layer.borderColor = UIColor.systemGray.cgColor
         self.lblLine.layer.borderWidth = 1.0
         
-        self.navigationItem.titleView = UIImageView (image: UIImage(named: "logo"))
-        self.navigationController?.navigationBar.barTintColor = UIColor.white
+        self.navigationItem.titleView = UIImageView (image: UIImage(named: "logoblue2"))
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+      
 
         // Do any additional setup after loading the view.
 
     }
     
+
 
     /*
     // MARK: - Navigation
