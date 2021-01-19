@@ -14,7 +14,6 @@
 		445269BD25B18B390024C844 /* PageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445269BB25B18B390024C844 /* PageCollectionViewCell.swift */; };
 		445269BE25B18B390024C844 /* PageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 445269BC25B18B390024C844 /* PageCollectionViewCell.xib */; };
 		445A6E1D25B5290F00843FAD /* TapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445A6E1C25B5290F00843FAD /* TapViewController.swift */; };
-		44645F5A25A844D700DD7B73 /* freeTrial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44645F5925A844D700DD7B73 /* freeTrial.swift */; };
 		44645F5D25A8459500DD7B73 /* signIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44645F5C25A8459500DD7B73 /* signIn.swift */; };
 		4489E31225A80ABC00567013 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489E31125A80ABC00567013 /* AppDelegate.swift */; };
 		4489E31425A80ABC00567013 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4489E31325A80ABC00567013 /* SceneDelegate.swift */; };
@@ -22,6 +21,7 @@
 		4489E31925A80ABC00567013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4489E31725A80ABC00567013 /* Main.storyboard */; };
 		4489E31B25A80AC000567013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4489E31A25A80AC000567013 /* Assets.xcassets */; };
 		4489E31E25A80AC000567013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4489E31C25A80AC000567013 /* LaunchScreen.storyboard */; };
+		449403C525B6C12500E02981 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449403C425B6C12500E02981 /* CollectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,6 @@
 		445269BB25B18B390024C844 /* PageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageCollectionViewCell.swift; sourceTree = "<group>"; };
 		445269BC25B18B390024C844 /* PageCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageCollectionViewCell.xib; sourceTree = "<group>"; };
 		445A6E1C25B5290F00843FAD /* TapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapViewController.swift; sourceTree = "<group>"; };
-		44645F5925A844D700DD7B73 /* freeTrial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = freeTrial.swift; sourceTree = "<group>"; };
 		44645F5C25A8459500DD7B73 /* signIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signIn.swift; sourceTree = "<group>"; };
 		4489E30E25A80ABC00567013 /* nativecampv3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nativecampv3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4489E31125A80ABC00567013 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +41,7 @@
 		4489E31A25A80AC000567013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4489E31D25A80AC000567013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4489E31F25A80AC000567013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		449403C425B6C12500E02981 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +99,10 @@
 				4489E31325A80ABC00567013 /* SceneDelegate.swift */,
 				4489E31525A80ABC00567013 /* ViewController.swift */,
 				4489E31725A80ABC00567013 /* Main.storyboard */,
+				449403C425B6C12500E02981 /* CollectionViewController.swift */,
 				445A6E1C25B5290F00843FAD /* TapViewController.swift */,
 				445269B625AEEED70024C844 /* TableViewController.swift */,
 				44645F5C25A8459500DD7B73 /* signIn.swift */,
-				44645F5925A844D700DD7B73 /* freeTrial.swift */,
 				4489E31A25A80AC000567013 /* Assets.xcassets */,
 				4489E31C25A80AC000567013 /* LaunchScreen.storyboard */,
 				4489E31F25A80AC000567013 /* Info.plist */,
@@ -183,10 +183,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				445269AD25AEE9AA0024C844 /* PageTableViewCell.swift in Sources */,
-				44645F5A25A844D700DD7B73 /* freeTrial.swift in Sources */,
 				445A6E1D25B5290F00843FAD /* TapViewController.swift in Sources */,
 				445269BD25B18B390024C844 /* PageCollectionViewCell.swift in Sources */,
 				4489E31625A80ABC00567013 /* ViewController.swift in Sources */,
+				449403C525B6C12500E02981 /* CollectionViewController.swift in Sources */,
 				4489E31225A80ABC00567013 /* AppDelegate.swift in Sources */,
 				44645F5D25A8459500DD7B73 /* signIn.swift in Sources */,
 				4489E31425A80ABC00567013 /* SceneDelegate.swift in Sources */,

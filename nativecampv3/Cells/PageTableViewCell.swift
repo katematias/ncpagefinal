@@ -12,6 +12,7 @@ class PageTableViewCell: UITableViewCell {
     @IBOutlet weak var img: UIImageView!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var lblCountry: UILabel!
+    @IBOutlet weak var lblDesc: UILabel!
 
     
     

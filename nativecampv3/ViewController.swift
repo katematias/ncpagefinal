@@ -22,6 +22,7 @@ class ViewController: UIViewController{
     var navigationBarAppearace = UINavigationBar.appearance()
 
     var landscape = UIView()
+  
     
    
    
@@ -31,16 +32,20 @@ class ViewController: UIViewController{
         // Do any additional setup after loading the view.
         self.navigationItem.titleView = UIImageView (image: UIImage(named: "logo"))
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        
+        self.setUpConstraints()
 
         
           
         }
+    
+//    let buttonCV: UIButton {
+//        let button = UIButton(type: UIButton.system)
+//    }
 
     override func viewDidAppear(_ animated: Bool) {
 
 
-        self.setUpConstraints()
+     
 
     }
 

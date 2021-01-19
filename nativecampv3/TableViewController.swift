@@ -12,6 +12,8 @@ struct Person {
     
     var name: String?
     var image: String?
+    var country: String?
+    var desc: String?
     
 }
 
@@ -24,28 +26,25 @@ class TableViewController: UIViewController {
     
     let twoDimensionalArrayStruct: [[Person]] = [
         [
-            Person.init(name: "John", image: "johnny"),
-            Person.init(name: "Stacey", image: "jisoo"),
-            Person.init(name: "June", image: "icon")
+            Person.init(name: "John", image: "johnny", country: "Philippines", desc: "For Kids"),
+            Person.init(name: "Stacey", image: "jisoo", country: "Philippines", desc: "For Kids"),
+            Person.init(name: "June", image: "icon", country: "Philippines", desc: "For Kids")
 
         
         ],
         [
-            Person.init(name: "Lisa", image: "lisa"),
-            Person.init(name: "Rose", image: "ose"),
-            Person.init(name: "Jennie", image: "jennie"),
-            Person.init(name: "Jisoo", image: "jisoo")
+            Person.init(name: "Lisa", image: "lisa", country: "Thailand", desc: "For Kids"),
+            Person.init(name: "Rose", image: "ose", country: "Korea", desc: "For Kids"),
+            Person.init(name: "Jennie", image: "jennie", country: "Korea", desc: "For Kids"),
+            Person.init(name: "Jisoo", image: "jisoo", country: "Korea", desc: "For Kids")
         ],
         [
-            Person.init(name: "Kate", image: "ose"),
-            Person.init(name: "Pierce", image: "pierce"),
-            Person.init(name: "Jhaniel", image: "johnny")
+            Person.init(name: "Kate", image: "ose", country: "Phillipines", desc: "For Kids"),
+            Person.init(name: "Pierce", image: "pierce", country: "Korea", desc: "For Kids"),
+            Person.init(name: "Jhaniel", image: "johnny", country: "Korea", desc: "For Kids")
 
         
         ]
-    
-        
-        
     ]
     
     override func viewDidLoad() {
@@ -75,29 +74,21 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: pageCellId, for: indexPath) as! PageTableViewCell
         cell.selectionStyle = .none
-//        let name = self.names[indexPath.row]
-//        let name = indexPath.section == 0 ? names[indexPath.row] : anotherNames[indexPath.row]
-//        let pages = names[indexPath.row]
         let person = twoDimensionalArrayStruct [indexPath.section][indexPath.row]
         cell.lblName.text = person.name
         cell.img.image = UIImage(named: person.image!)
-        cell.lblCountry.text = "Section:\(indexPath.section) Row: \(indexPath.row)"
+        cell.lblCountry.text = person.country
+        cell.lblDesc.text = person.desc
         
         cell.layoutIfNeeded()
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let pages = page[indexPath.row]
+        
         print ("\(indexPath.section) - \(indexPath.row)")
-//        let sb = UIStoryboard(name: "tapViewController", bundle: nil)
-//        // - redirect to page
-//            let view = sb.instantiateViewController(withIdentifier: "tapViewController")
-//            self.navigationController?.pushViewController(view, animated: true)
-      let next = self.storyboard?.instantiateViewController(withIdentifier: "TapViewController") as! TapViewController
+        let next = self.storyboard?.instantiateViewController(withIdentifier: "TapViewController") as! TapViewController
         next.twoDimensionalArrayStruct = twoDimensionalArrayStruct[indexPath.section][indexPath.row]
-        
         self.present(next, animated: true, completion: nil)
-        
        
     }
     
@@ -107,17 +98,8 @@ extension TableViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let label = UILabel()
-//        let label2 = UILabel()
         label.text = "Teachers"
-//        label2.text = "Trainees"
         label.backgroundColor = UIColor.systemGray
         return label
-        
-    
     }
-    
-
-    
-    
-
 }

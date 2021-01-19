@@ -9,16 +9,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PageCollectionViewCell" customModule="nativecampv3" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="639" height="116"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="gTV-IL-0wX" customClass="PageCollectionViewCell" customModule="nativecampv3" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="496" height="281"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="639" height="116"/>
+                <rect key="frame" x="0.0" y="0.0" width="496" height="281"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VjC-0m-kId">
+                        <rect key="frame" x="127" y="31" width="231" height="218"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <size key="customSize" width="639" height="116"/>
-            <point key="canvasLocation" x="318.11594202898556" y="129.24107142857142"/>
+            <size key="customSize" width="496" height="281"/>
+            <connections>
+                <outlet property="imageView" destination="VjC-0m-kId" id="gwC-xE-mVz"/>
+            </connections>
+            <point key="canvasLocation" x="446.37681159420293" y="187.83482142857142"/>
         </collectionViewCell>
     </objects>
 </document>
